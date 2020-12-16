@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>git-explore</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <input type="text" placeholder="https://github.com/vxxce/git-explore" />
-  <button>Analyze</button>
-  <script src="js/index.js"></script>
+  <div class="title">GitEx<span class="plorer">(plorer)</span><span id="byabhi"> by Abhi</div>
+    <hr>
+
+  <div id="ui_controls_container">
+    <input id='input_user' type="text" placeholder="user"/>
+    <input id='input_repo' type="text" placeholder="repo"/>
+    <button>Analyze</button>
+  </div>
+  (only supports github for now)
+
+  <div id="output_box_container">
+    <pre id="output_box">
+    </pre>
+    <script src="js/index.js"></script>
+  </div>
 </body>
+
 </html>
+
+<script>
+  // document.getElementById('input_user').value = 'abhiss'
+  // document.getElementById('input_repo').value = 'sth'
+//   document.getElementById('output_box').innerText = `===============================================================================
+//  Language            Files        Lines         Code     Comments       Blanks
+// ===============================================================================
+//  Batch                   1            4            4            0            0
+//  JSON                   11          323          323            0            0
+//  PowerShell              1          148          134            0           14
+//  TypeScript              4        25948         7527        11729         6692
+//  YAML                    2            7            7            0            0
+// -------------------------------------------------------------------------------
+//  Markdown                8           69            0           49           20
+//  |- BASH                 5           24           12           12            0
+//  |- JSON                 1            8            8            0            0
+//  (Total)                            101           20           61           20
+// ===============================================================================
+//  Total                  27        26531         8015        11790         6726
+// ===============================================================================
+// `
+</script>

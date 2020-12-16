@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --inspect=0.0.0.0 ./main.js"
+    "start": "nodemon --inspect=0.0.0.0 ./main.js"
   },
   "type": "commonjs",
   "repository": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vxxce/git-explore#readme",
   "dependencies": {
+    "degit": "^2.8.0",
     "express": "^4.17.1",
     "ws": "^7.3.1"
   }
