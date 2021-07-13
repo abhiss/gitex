@@ -38,7 +38,6 @@ const requestHandler = async function (url) {
 
         // -o json
         return (await promisify(exec)(`tokei ${directoryName} `, {maxBuffer: 1024 * 50000})).stdout;
-        // return "we done";
     }
     catch (err) {
         console.log('error' + err);

@@ -30,7 +30,7 @@ server.post("/analyze", async (req, res) => {
   
   }
   catch (err) {
-    res.send(JSON.stringify({ result: "An error occured. Maybe the entered repo is invalid?\n(Keep in mind that only github is supported for now.)" }));
+    res.send(JSON.stringify({ result: `An error occured. Possible errors:\n    -The repo you entered was invalid.\n    -The repo isn't on github.\n    -The repo doesn't contain the branch (default: master).` }));
   }
 
 })

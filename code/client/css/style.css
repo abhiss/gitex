@@ -55,9 +55,7 @@ body {
   min-height: 50vh;
   padding: 1vw;
   margin: 1vw;
-  width: fit-content;
-  min-width: 40vw;
-  max-width: 96vw;
+  width: fit-content; 
   background-color: black;
   border-radius: 5px;
 }
