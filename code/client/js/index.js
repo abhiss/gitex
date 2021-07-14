@@ -27,3 +27,17 @@ document.querySelector('button').addEventListener('click', getAnalysis)
 document.querySelector('input').addEventListener('keypress', (e) => {
   if (e.key == "Enter") getAnalysis()
 })
+
+
+
+let sugs = document.getElementsByClassName("sug");
+for(let i=0; i< sugs.length; i++){
+  sugs[i].addEventListener('click', function(){
+    let sug = sugs[i];
+    sug = sug.textContent.split('/');
+  
+    document.getElementById('input_user').value = sug[0];
+    document.getElementById('input_repo').value = sug[1];
+    document.querySelector('button').click();
+  })
+}
